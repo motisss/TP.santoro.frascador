@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #B91C1C;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: 40px;
+  margin-right: 8px;
+}
+
+.navbar-logo span {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-contact {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.intro h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.intro h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4A5568;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  color: #4A5568;
+  font-size: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.error-card {
+  border: 2px solid #B91C1C;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.error-card summary {
+  list-style: none;
+  padding: 8px;
+  background-color: #FEE2E2;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 2px solid #B91C1C;
+}
+
+.error-card summary h3 {
+  color: #B91C1C;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.error-card summary p {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.error-card:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.error-card p.error-solution {
+  margin-top: 8px;
+  color: #4A5568;
+  font-size: 14px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  border-top: 2px solid #B91C1C;
+}
+
+.footer {
+  background-color: #B91C1C;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 32px;
+}
